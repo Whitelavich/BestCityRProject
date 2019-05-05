@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "BestCityRProject", "BestCityRProject\BestCityRProject.rxproj", "{09994030-2470-4406-BA71-DBBE276E6393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09994030-2470-4406-BA71-DBBE276E6393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09994030-2470-4406-BA71-DBBE276E6393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09994030-2470-4406-BA71-DBBE276E6393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09994030-2470-4406-BA71-DBBE276E6393}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE39F941-2CF9-47F0-B76A-BC6AACD6A436}
+	EndGlobalSection
+EndGlobal
