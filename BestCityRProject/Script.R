@@ -85,6 +85,8 @@ satisfaction <- merge(happy,, by = "City")
 happy<-head(happy,20)
 ggplot(data = happy, aes(x = reorder(City,c(1:nrow(happy))), y = c(1:nrow(happy)))) + geom_bar(stat = "identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-ggplot(data = medianIncome, aes(x = City, y = c(1:nrow(medianIncome)))) + geom_bar(stat = "identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+
 
 
