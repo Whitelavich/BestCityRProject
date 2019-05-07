@@ -36,3 +36,13 @@ for (index in 1:nrow(income)) {
 }
 
 final <- merge(final, income, by = "City")
+report <- subset(report,report$report_year==2015)
+crime <- subset(report, select = c("agency_jurisdiction", "crimes_percapita"))
+crime[] <- lapply(crime, gsub, pattern = ',', replacement = '')
+colnames(crime) <- c("City", "crime_rate")
+
+for (index in 1:nrow(crime)) {
+    crime[index, "City"] <- tolower(crime[index, "City"])
+}
+
+final<-merge(final,crime,by = "City")
