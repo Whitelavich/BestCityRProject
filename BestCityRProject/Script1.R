@@ -67,11 +67,16 @@ CountGraph <- ggplot(data = final, aes(x = reorder(City,-NumHospitals))) +
      geom_bar(aes(y = Number_Of_Museums, group = 1, color = "Number of Museums"), stat = "identity") +
      geom_bar(aes(y = NumHospitals, group = 2, color = "Number of Hospitals",fill=NULL), stat = "identity") +
      scale_color_manual(values = c("blue", "red"))
-     
-     
-   
 
 CountGraph
+
+final$crime_rate<-as.numeric(final$crime_rate)
+
+crimeGraph <- ggplot(data = final, aes(x = reorder(City,crime_rate), y = crime_rate,group = 1)) +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+    geom_line()
+
+crimeGraph
 
 
 #SO heres my thought if we sort by the different column and then average the indexes of the cities we can produce an overall score
